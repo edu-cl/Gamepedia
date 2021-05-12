@@ -152,6 +152,8 @@ public class InicioController {
 	@FXML
 	private void AñadirCategoria() {
 		Stage p = new Stage();
+		CategoriaDAO c=new CategoriaDAO();
+		RegistroController.setCategoria(c);
 		try {
 			App.loadScene(p, "registro", "Añadir Categoria");
 		} catch (IOException e) {

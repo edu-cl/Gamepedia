@@ -150,6 +150,9 @@ public class JuegoController {
 	@FXML
 	private void AñadirJuego() {
 		Stage p = new Stage();
+		
+		JuegoDAO j=new JuegoDAO();
+		RegistroJuegoController.setJuego(j);
 		try {
 			App.loadScene(p, "RegistroJuegos", "Añadir Juego ");
 			

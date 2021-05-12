@@ -153,6 +153,7 @@ public class InicioController {
 	private void AñadirCategoria() {
 		Stage p = new Stage();
 		CategoriaDAO c=new CategoriaDAO();
+		System.out.println();
 		RegistroController.setCategoria(c);
 		try {
 			App.loadScene(p, "registro", "Añadir Categoria");

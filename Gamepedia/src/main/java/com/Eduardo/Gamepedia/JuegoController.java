@@ -153,6 +153,7 @@ public class JuegoController {
 		
 		JuegoDAO j=new JuegoDAO();
 		RegistroJuegoController.setJuego(j);
+		System.out.println();
 		try {
 			App.loadScene(p, "RegistroJuegos", "Añadir Juego ");
 			
